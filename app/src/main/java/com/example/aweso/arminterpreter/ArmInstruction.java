@@ -15,6 +15,7 @@ public class ArmInstruction
 
     public ArmInstruction(String instruction, String destination, String sourceReg1, String sourceReg2)
     {
+        this();
 
     }
 }
