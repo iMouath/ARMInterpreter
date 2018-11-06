@@ -4,15 +4,13 @@ public class ARMap
 {
     private static String[] instructions = {"ADD", "SUB"};
     private static int[] instructionMappings = {1112, 1624};
-    private static String[] registers = new String[31];
-    private static String[] registerBinMap = new String[31];
+    public static Register[] registers = new Register[31];
 
     public static void init()
     {
-        for(int i = 0; i < 32; i++)
+        for(int i = 0; i < ARMap.registers.length; i++)
         {
-            ARMap.registers[i] = "X" + i;
-            ARMap.registerBinMap[i] = ARMap.decimalTo5BitBinary(i);
+            ARMap.registers[i] = new Register("X" + i);
         }
     }
 
@@ -29,7 +27,7 @@ public class ARMap
         return null;  //we assume every mapping is found, so this should never get hit!
     }
 
-    private static String decimalTo5BitBinary(int opCode)
+    public static String decimalTo5BitBinary(int opCode)
     {
         return ARMap.decimalToNBitBinary(opCode, 5);
     }
