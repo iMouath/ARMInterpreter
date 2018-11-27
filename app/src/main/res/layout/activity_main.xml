@@ -19,7 +19,7 @@
             android:gravity="center"
             android:hint="Enter ARM Instruction"
             android:inputType="textPersonName"
-            android:text="ADD X0,   X1,X2" />
+            android:text="LDUR X1, [X2, 4]" />
 
         <Button
             android:id="@+id/button5"
@@ -46,6 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="memoryButtonPressed"
                 android:text="Memory" />
         </LinearLayout>
 

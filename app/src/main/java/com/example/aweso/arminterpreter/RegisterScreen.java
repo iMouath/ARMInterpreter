@@ -1,9 +1,11 @@
 package com.example.aweso.arminterpreter;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterScreen extends AppCompatActivity
@@ -56,6 +58,15 @@ public class RegisterScreen extends AppCompatActivity
         {
             this.theRegisterETs[i].setText("" + ARMap.registers[i].getValue());
         }
+    }
+
+    public void registerNameTFPressed(View v)
+    {
+        TextView tv = (TextView)v;
+        String registerName = tv.getText().toString();
+        Intent i = new Intent(this, RegisterDetailScreen.class);
+        i.putExtra("detailRegisterName", registerName);
+        this.startActivity(i);
     }
 
     /*
