@@ -19,6 +19,7 @@
         <activity android:name=".RegisterScreen" />
         <activity android:name=".RegisterDetailScreen" />
         <activity android:name=".MemoryScreen" />
+        <activity android:name=".InstructionPickerActivity"></activity>
     </application>
 
 </manifest>
