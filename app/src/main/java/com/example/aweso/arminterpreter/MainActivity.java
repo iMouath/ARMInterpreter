@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         ARMap.init();
 
-        this.instructionET = (EditText)this.findViewById(R.id.instructionET);
+        this.instructionET = this.findViewById(R.id.instructionET);
         //ARMap.lookupInstruction("ADD").display();
     }
 

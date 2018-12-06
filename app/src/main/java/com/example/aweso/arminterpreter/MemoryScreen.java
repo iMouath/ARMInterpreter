@@ -19,7 +19,7 @@ public class MemoryScreen extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_screen);
-        this.memoryVG = (ViewGroup)this.findViewById(R.id.memoryVG);
+        this.memoryVG = this.findViewById(R.id.memoryVG);
         EditText tempET;
         TextView indexTV;
         LinearLayout horizontalVG;

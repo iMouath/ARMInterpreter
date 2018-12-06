@@ -38,8 +38,7 @@ public class Register
             //String encoded = ARMap.decimalToNBitBinary(Integer.parseInt(flipped, 2) + 1, Register.bitSize);
             long l = Long.parseLong(flipped,2);
             l += 1;
-            String twosComp = ARMap.decimalToNBitBinary(l, Register.bitSize);
-            return twosComp;
+            return ARMap.decimalToNBitBinary(l, Register.bitSize);
         }
         else
         {

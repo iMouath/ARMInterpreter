@@ -12,9 +12,9 @@ public class RegisterDetailScreen extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_detail_screen);
-        this.registerNameTV = (TextView)this.findViewById(R.id.registerNameTV);
-        this.decimalValueTV = (TextView)this.findViewById(R.id.decimalValueTV);
-        this.binaryValueTV = (TextView)this.findViewById(R.id.binaryValueTV);
+        this.registerNameTV = this.findViewById(R.id.registerNameTV);
+        this.decimalValueTV = this.findViewById(R.id.decimalValueTV);
+        this.binaryValueTV = this.findViewById(R.id.binaryValueTV);
         String registerName = this.getIntent().getStringExtra("detailRegisterName");
         this.registerNameTV.setText(String.format("%s Register Detail", registerName));
 
